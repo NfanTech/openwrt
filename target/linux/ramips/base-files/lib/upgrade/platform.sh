@@ -56,8 +56,10 @@ platform_do_upgrade() {
 		default_do_upgrade "$1"
 		;;
 	hc5962|\
+	linksys,ea7500-v2|\
 	r6220|\
 	netgear,r6350|\
+	netgear,r6800|\
 	ubnt-erx|\
 	ubnt-erx-sfp|\
 	xiaomi,mir3g|\

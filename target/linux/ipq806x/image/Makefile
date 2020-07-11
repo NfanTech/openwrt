@@ -118,7 +118,7 @@ define Device/linksys_ea8500
 	IMAGES := factory.bin sysupgrade.bin
 	IMAGE/factory.bin := append-kernel | pad-to $$$${KERNEL_SIZE} | append-ubi
 	DEVICE_TITLE := Linksys EA8500
-	DEVICE_PACKAGES := ath10k-firmware-qca99x0-ct
+	DEVICE_PACKAGES := ath10k-firmware-qca99x0-ct-htt
 endef
 TARGET_DEVICES += linksys_ea8500
 
@@ -190,7 +190,7 @@ define Device/netgear_r7800
 	BOARD_NAME := r7800
 	SUPPORTED_DEVICES += r7800
 	DEVICE_TITLE := Netgear Nighthawk X4S R7800
-	DEVICE_PACKAGES := ath10k-firmware-qca9984-ct kmod-qca-nss-gmac
+	DEVICE_PACKAGES := ath10k-firmware-qca9984-ct-htt kmod-qca-nss-gmac
 endef
 TARGET_DEVICES += netgear_r7800
 
