@@ -1,51 +1,49 @@
-====
-#Welcome to NfanTech's mod OpenWrt and packages
-=
-欢迎使用恩饭科技魔改合成怪版本OpenWrt
-=
-For IPQ806x MTK x86
-=
-主要用于IPQ806x MTK x86平台
-=
+#Welcome to NfanTech's mod OpenWrt
+## 欢迎使用恩饭科技魔改合成怪版OpenWrt
 
-基于官方固件魔改
-特别感谢：
-quarkysg 提供NSS魔改 https://github.com/quarkysg/openwrt/
-lean 提供软件包 https://github.com/coolsnowwolf/lede/
-presisco 提供MTK和设置魔改  https://github.com/presisco/openwrt/
+### For IPQ806x MTK x86
+
+Base on offical git joined with special mod from Github
+### Special Thanks
+quarkysg's 	[NSS Mods](https://github.com/quarkysg/openwrt/ "NSS") 
+lean's 	[Packages](https://github.com/coolsnowwolf/lede/ "Packages") 
+presisco's  	 [MTK Mods and Setting](https://github.com/presisco/openwrt/ "MTK Mods and Setting")
 
 
-  _______                     ________        __
- |       |.-----.-----.-----.|  |  |  |.----.|  |_
- |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
- |_______||   __|_____|__|__||________||__|  |____|
-          |__| W I R E L E S S   F R E E D O M
- -----------------------------------------------------
-
-This is the buildsystem for the OpenWrt Linux distribution.
-
-To build your own firmware you need a Linux, BSD or MacOSX system (case
-sensitive filesystem required). Cygwin is unsupported because of the lack
-of a case sensitive file system.
-
-You need gcc, binutils, bzip2, flex, python, perl, make, find, grep, diff,
-unzip, gawk, getopt, subversion, libz-dev and libc headers installed.
-
-1. Run "./scripts/feeds update -a" to obtain all the latest package definitions
-defined in feeds.conf / feeds.conf.default
-
-2. Run "./scripts/feeds install -a" to install symlinks for all obtained
-packages into package/feeds/
-
-3. Run "make menuconfig" to select your preferred configuration for the
-toolchain, target system & firmware packages.
-
-4. Run "make" to build your firmware. This will download all sources, build
-the cross-compile toolchain and then cross-compile the Linux kernel & all
-chosen applications for your target system.
-
-Sunshine!
-	Your OpenWrt Community
-	http://www.openwrt.org
+------------
 
 
+
+### 主要用于IPQ806x MTK x86平台主要用于IPQ806x MTK x86平台
+基于官方魔改
+### 特别感谢
+quarkysg's 	[NSS移植](https://github.com/quarkysg/openwrt/ "NSS") 
+lean's 	[软件包](https://github.com/coolsnowwolf/lede/ "Packages") 
+presisco's	[MTK移植和设置](https://github.com/presisco/openwrt/ "MTK Mods and Setting")
+
+
+------------
+
+编译命令如下:
+
+1. 首先装好 Ubuntu 64bit，推荐  Ubuntu  18 LTS x64（20太新，有些地方会出奇怪bug）
+
+2. 命令行输入 `sudo apt-get update` ，然后输入
+`
+sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch python3.5 python2.7 unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler g++-multilib antlr3 gperf wget swig
+`
+
+3. 使用 `git clone https://github.com/NfanTech/openwrt` 命令下载好源代码，然后 `cd openwrt` 进入目录
+
+4. ```bash
+   ./scripts/feeds update -a
+   ./scripts/feeds install -a
+   make menuconfig
+   ```
+
+5. `make -j8 download V=s` 下载dl库（国内请尽量全局科学上网）
+
+
+6. 输入 `make -j8 V=s` （-j8 后面是线程数。第一次编译推荐用单线程）即可开始编译你要的固件了。
+
+本套代码由于多数魔改存在编译失败情况出现。
