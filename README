@@ -1,3 +1,19 @@
+Welcome to NfanTech's mod OpenWrt and packages
+=
+欢迎使用恩饭科技魔改合成怪版本OpenWrt
+=
+For IPQ806x MTK x86
+=
+主要用于IPQ806x MTK x86平台
+=
+
+基于官方固件魔改
+特别感谢：
+quarkysg 提供NSS魔改 https://github.com/quarkysg/openwrt/
+lean 提供软件包 https://github.com/coolsnowwolf/lede/
+presisco 提供MTK和设置魔改  https://github.com/presisco/openwrt/
+
+
   _______                     ________        __
  |       |.-----.-----.-----.|  |  |  |.----.|  |_
  |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
