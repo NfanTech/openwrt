@@ -1,5 +1,5 @@
---- a/include/linux/skbuff.h	2019-01-16 20:16:08.325745306 +0800
-+++ b/include/linux/skbuff.h	2019-01-16 20:31:47.288028493 +0800
+--- a/include/linux/skbuff.h
++++ b/include/linux/skbuff.h
 @@ -783,6 +783,9 @@ struct sk_buff {
  	__u8			tc_from_ingress:1;
  #endif
@@ -10,8 +10,8 @@
  
  #ifdef CONFIG_NET_SCHED
  	__u16			tc_index;	/* traffic control index */
---- a/include/linux/if_bridge.h	2019-01-16 20:51:47.871445535 +0800
-+++ b/include/linux/if_bridge.h	2019-01-16 20:52:26.220269649 +0800
+--- a/include/linux/if_bridge.h
++++ b/include/linux/if_bridge.h
 @@ -54,6 +54,8 @@ struct br_ip_list {
  #define BR_DEFAULT_AGEING_TIME	(300 * HZ)
  
@@ -33,8 +33,8 @@
  
  #ifdef CONFIG_LOCKDEP
  	struct lockdep_map	lockdep_map;
---- a/net/Kconfig	2019-01-16 20:36:30.266465286 +0800
-+++ b/net/Kconfig	2019-01-16 20:36:41.980609067 +0800
+--- a/net/Kconfig
++++ b/net/Kconfig
 @@ -463,3 +463,6 @@ config HAVE_CBPF_JIT
  # Extended BPF JIT (eBPF)
  config HAVE_EBPF_JIT
@@ -42,8 +42,8 @@
 +
 +config SHORTCUT_FE
 +	bool "Enables kernel network stack path for Shortcut  Forwarding Engine
---- a/net/core/dev.c	2019-01-16 20:38:37.274933833 +0800
-+++ b/net/core/dev.c	2019-01-16 20:44:07.773594898 +0800
+--- a/net/core/dev.c
++++ b/net/core/dev.c
 @@ -3001,8 +3001,17 @@ static int xmit_one(struct sk_buff *skb,
  	unsigned int len;
  	int rc;
@@ -101,8 +101,8 @@
  	if (skb_skip_tc_classify(skb))
  		goto skip_classify;
  
---- a/net/netfilter/nf_conntrack_proto_tcp.c	2019-01-16 20:47:40.886993297 +0800
-+++ b/net/netfilter/nf_conntrack_proto_tcp.c	2019-01-16 20:48:57.700570104 +0800
+--- a/net/netfilter/nf_conntrack_proto_tcp.c
++++ b/net/netfilter/nf_conntrack_proto_tcp.c
 @@ -35,11 +35,17 @@
  
  /* Do not check the TCP window for incoming packets  */
@@ -121,8 +121,8 @@
  
  /* If it is set to zero, we disable picking up already established
     connections. */
---- a/net/bridge/br_if.c	2019-01-16 20:54:51.919367044 +0800
-+++ b/net/bridge/br_if.c	2019-01-16 20:55:53.812401263 +0800
+--- a/net/bridge/br_if.c
++++ b/net/bridge/br_if.c
 @@ -653,3 +653,26 @@ void br_port_flags_change(struct net_bri
  	if (mask & BR_AUTO_MASK)
  		nbp_update_port_count(br);
@@ -150,8 +150,8 @@
 +	u64_stats_update_end(&stats->syncp);
 +}
 +EXPORT_SYMBOL_GPL(br_dev_update_stats);
---- a/net/netfilter/Kconfig	2019-01-16 21:07:34.543460920 +0800
-+++ b/net/netfilter/Kconfig	2019-01-16 21:08:14.739465937 +0800
+--- a/net/netfilter/Kconfig
++++ b/net/netfilter/Kconfig
 @@ -146,6 +146,14 @@ config NF_CONNTRACK_TIMEOUT
  
  	  If unsure, say `N'.
@@ -167,8 +167,8 @@
  config NF_CONNTRACK_TIMESTAMP
  	bool  'Connection tracking timestamping'
  	depends on NETFILTER_ADVANCED
---- a/net/netfilter/nf_conntrack_ecache.c	2019-01-16 21:12:22.183462975 +0800
-+++ b/net/netfilter/nf_conntrack_ecache.c	2019-01-16 21:26:10.379462031 +0800
+--- a/net/netfilter/nf_conntrack_ecache.c
++++ b/net/netfilter/nf_conntrack_ecache.c
 @@ -122,13 +125,17 @@ int nf_conntrack_eventmask_report(unsign
  {
  	int ret = 0;
