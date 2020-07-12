@@ -1946,7 +1946,7 @@ static void __exit fast_classifier_exit(void)
 
 #ifdef CONFIG_NF_CONNTRACK_EVENTS
 	nf_conntrack_unregister_notifier(&init_net, &fast_classifier_conntrack_notifier);
-#endif
+
 #endif
 	nf_unregister_net_hooks(&init_net, fast_classifier_ops_post_routing, ARRAY_SIZE(fast_classifier_ops_post_routing));
 
