@@ -20,7 +20,7 @@ define Package/lean-adapt-settings
   CATEGORY:=LuCI
   TITLE:=adjusted lean settins - LuCI support for Default Settings
   PKGARCH:=all
-  DEPENDS:=+luci-base +@LUCI_LANG.zh_Hans
+  DEPENDS:=+luci-base +@LUCI_LANG_zh_Hans +kmod-ipt-fullconenat
 endef
 
 define Package/lean-adapt-settings/description
@@ -37,9 +37,9 @@ define Package/lean-adapt-settings/install
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
 	$(INSTALL_BIN) ./files/zzz-default-settings $(1)/etc/uci-defaults/99-default-settings
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
-	po2lmo ./i18n/default.zh_hans.po $(1)/usr/lib/lua/luci/i18n/default.zh_hans.lmo
-	po2lmo ./i18n/more.zh_hans.po $(1)/usr/lib/lua/luci/i18n/more.zh_hans.lmo
-	po2lmo ./i18n/sqm.zh_hans.po $(1)/usr/lib/lua/luci/i18n/sqm.zh_hans.lmo
+	po2lmo ./i18n/default.zh_Hans.po $(1)/usr/lib/lua/luci/i18n/default.zh_Hans.lmo
+	po2lmo ./i18n/more.zh_Hans.po $(1)/usr/lib/lua/luci/i18n/more.zh_Hans.lmo
+	po2lmo ./i18n/sqm.zh_Hans.po $(1)/usr/lib/lua/luci/i18n/sqm.zh_Hans.lmo
 endef
 
 $(eval $(call BuildPackage,lean-adapt-settings))
