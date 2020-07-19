@@ -9,8 +9,6 @@ uci commit system
 uci set fstab.@global[0].anon_mount=1
 uci commit fstab
 
-ln -sf /sbin/ip /usr/bin/ip
-ln -sf /bin/uclient-fetch /usr/bin/wget-ssl
 
 # sed -i '/REDIRECT --to-ports 53/d' /etc/firewall.user
 # echo "iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53" >> /etc/firewall.user
