@@ -201,3 +201,8 @@ msgstr "最小数据包大小，MPU（byte）; 在以太网中需要>0："
 #: usr/lib/lua/luci/model/cbi/sqm.lua:242
 msgid "Which linklayer adaptation mechanism to use; for testing only"
 msgstr "使用哪个链路适应机制; 仅用于测试"
+
+msgid ""
+"Create log file for this SQM instance under /var/run/sqm/${Interface_name}."
+"[start|stop]-sqm.log."
+msgstr "创建日志文件(/var/run/sqm/${Interface_name}.[start|stop]-sqm.log)。"

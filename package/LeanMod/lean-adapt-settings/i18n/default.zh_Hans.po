@@ -13,6 +13,12 @@ msgstr "CPU信息"
 msgid "CPU Model"
 msgstr "处理器型号"
 
+msgid "Interface"
+msgstr "接口"
+
+msgid "Status"
+msgstr "状态"
+
 msgid "CPU frequency"
 msgstr "CPU频率"
 
@@ -68,4 +74,10 @@ msgstr "弱信号剔除"
 
 msgid "Allow AP mode to disconnect STAs based on low ACK condition"
 msgstr "允许AP模式基于低ACK条件判断剔除弱信号的客户端"
+
+msgid ""
+"There is no password set on this router. "
+"Please configure a root password to protect the web interface and enable SSH."
+msgstr "本机没有设置密码。请设置一个root密码用来保护web界面同时开启SSH。"
+
 
