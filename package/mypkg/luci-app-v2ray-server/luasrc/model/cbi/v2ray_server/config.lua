@@ -4,7 +4,7 @@ local d = require "luci.dispatcher"
 local header_type = {"none", "srtp", "utp", "wechat-video", "dtls", "wireguard"}
 
 map = Map(app_name, "V2ray " .. translate("Server Config"))
-map.redirect = d.build_url("admin", "vpn", "v2ray_server")
+map.redirect = d.build_url("admin", "services", "v2ray_server")
 
 t = map:section(NamedSection, arg[1], "user", "")
 t.addremove = false

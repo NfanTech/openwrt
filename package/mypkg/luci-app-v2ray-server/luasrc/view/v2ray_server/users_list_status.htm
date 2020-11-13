@@ -8,7 +8,7 @@ local dsp = require "luci.dispatcher"
 	for(var i = 0; i < v2ray_users_status.length; i++) {
 		var id = v2ray_users_status[i].parentElement.parentElement.parentElement.id;
 		id = id.substr(id.lastIndexOf("-") + 1);
-		XHR.poll(1,'<%=dsp.build_url("admin/vpn/v2ray_server/users_status")%>', {
+		XHR.poll(1,'<%=dsp.build_url("admin/services/v2ray_server/users_status")%>', {
 				index: i,
 				id: id
 			},

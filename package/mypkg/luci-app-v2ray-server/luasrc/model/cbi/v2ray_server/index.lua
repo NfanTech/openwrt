@@ -17,15 +17,15 @@ t = m:section(TypedSection, "user", translate("Users Manager"))
 t.anonymous = true
 t.addremove = true
 t.template = "cbi/tblsection"
-t.extedit = i.build_url("admin", "vpn", o, "config", "%s")
+t.extedit = i.build_url("admin", "services", o, "config", "%s")
 function t.create(t, e)
     local e = TypedSection.create(t, e)
-    luci.http.redirect(i.build_url("admin", "vpn", o, "config", e))
+    luci.http.redirect(i.build_url("admin", "services", o, "config", e))
 end
 function t.remove(t, a)
     t.map.proceed = true
     t.map:del(a)
-    luci.http.redirect(i.build_url("admin", "vpn", o))
+    luci.http.redirect(i.build_url("admin", "services", o))
 end
 e = t:option(Flag, "enable", translate("Enable"))
 e.width = "5%"
