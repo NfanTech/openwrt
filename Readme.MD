@@ -18,7 +18,7 @@ presisco's  	 [MTK Mods and Setting](https://github.com/presisco/openwrt/ "MTK M
 基于官方魔改
 ### 特别感谢
 quarkysg's 	[NSS移植](https://github.com/quarkysg/openwrt/ "NSS") 
-lean's 	[软件包](https://github.com/coolsnowwolf/lede/ "Packages") 
+lean's 	[软件包](https://github.com/coolsnowwolf/lede/ "Packages") 位于mypkg，并作了部分修改。 
 presisco's	[MTK移植和设置](https://github.com/presisco/openwrt/ "MTK Mods and Setting")
 
 
