@@ -1034,3 +1034,18 @@ msgstr "警告：当前系统没有包括两个分区!"
 
 msgid "Warning: This system does not support powering off!"
 msgstr "警告：本系统不支持软关机!"
+
+msgid "Containers"
+msgstr "容器"
+
+msgid "Images"
+msgstr "镜像"
+
+msgid "Networks"
+msgstr "网络"
+
+msgid "Volumes"
+msgstr "存储卷"
+
+msgid "Events"
+msgstr "事件"
