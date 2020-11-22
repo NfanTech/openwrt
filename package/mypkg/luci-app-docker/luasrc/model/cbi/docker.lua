@@ -2,7 +2,7 @@ local running = (luci.sys.call("pidof portainer >/dev/null") == 0)
 local button = ""
 
 if running then
-	button = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br /><input type=\"button\" value=\" " .. translate("Open Portainer Docker Admin") .. " \" onclick=\"window.open('http://'+window.location.hostname+':" .. 9999 .. "')\"/><br />"
+	button = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br /><input type=\"button\" value=\" " .. translate("Open Portainer Docker Admin") .. " \" onclick=\"window.open('http://'+window.location.hostname+':" .. 9000 .. "')\"/><br />"
 end
 
 m = Map("dockerd", "Docker CE", translate("Docker is a set of platform-as-a-service (PaaS) products that use OS-level virtualization to deliver software in packages called containers.") .. button)
