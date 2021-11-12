@@ -13,6 +13,9 @@ msgstr "CPU信息"
 msgid "CPU Model"
 msgstr "处理器型号"
 
+msgid "FileTransfer"
+msgstr "文件传输"
+
 msgid "Interface"
 msgstr "接口"
 

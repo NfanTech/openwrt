@@ -14,10 +14,10 @@ msgid "Day"
 msgstr "天"
 
 msgid "Hour"
-msgstr "时"
+msgstr "小时"
 
 msgid "Minute"
-msgstr "分"
+msgstr "分钟"
 
 
 

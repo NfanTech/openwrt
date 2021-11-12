@@ -468,7 +468,7 @@ config BUSYBOX_DEFAULT_FEATURE_TAR_SELINUX
 	default n
 config BUSYBOX_DEFAULT_UNZIP
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_FEATURE_UNZIP_CDF
 	bool
 	default n
@@ -522,10 +522,10 @@ config BUSYBOX_DEFAULT_CP
 	default y
 config BUSYBOX_DEFAULT_FEATURE_CP_LONG_OPTIONS
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_FEATURE_CP_REFLINK
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_CUT
 	bool
 	default y
@@ -672,13 +672,13 @@ config BUSYBOX_DEFAULT_MD5SUM
 	default y
 config BUSYBOX_DEFAULT_SHA1SUM
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_SHA256SUM
 	bool
 	default y
 config BUSYBOX_DEFAULT_SHA512SUM
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_SHA3SUM
 	bool
 	default n
@@ -840,10 +840,10 @@ config BUSYBOX_DEFAULT_TR
 	default y
 config BUSYBOX_DEFAULT_FEATURE_TR_CLASSES
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_FEATURE_TR_EQUIV
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_TRUE
 	bool
 	default y
@@ -880,7 +880,7 @@ config BUSYBOX_DEFAULT_BASE32
 	default n
 config BUSYBOX_DEFAULT_BASE64
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_UUENCODE
 	bool
 	default n
@@ -1030,10 +1030,10 @@ config BUSYBOX_DEFAULT_CMP
 	default y
 config BUSYBOX_DEFAULT_DIFF
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_FEATURE_DIFF_LONG_OPTIONS
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_FEATURE_DIFF_DIR
 	bool
 	default n
@@ -1402,19 +1402,19 @@ config BUSYBOX_DEFAULT_DEPMOD
 	default n
 config BUSYBOX_DEFAULT_INSMOD
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_LSMOD
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_FEATURE_LSMOD_PRETTY_2_6_OUTPUT
 	bool
 	default n
 config BUSYBOX_DEFAULT_MODINFO
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_MODPROBE
 	bool
-	default n
+	default y
 config BUSYBOX_DEFAULT_FEATURE_MODPROBE_BLACKLIST
 	bool
 	default n
