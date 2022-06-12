@@ -20,7 +20,7 @@ define Package/lean-adapt-settings
   CATEGORY:=LuCI
   TITLE:=adjusted lean settins - LuCI support for Default Settings
   PKGARCH:=all
-  DEPENDS:=+luci-base +@LUCI_LANG_zh_Hans +iptables-mod-fullconenat +wget
+  DEPENDS:=+luci-base +@LUCI_LANG_zh_Hans +iptables-mod-fullconenat +wget +python3
 endef
 
 define Package/lean-adapt-settings/description
