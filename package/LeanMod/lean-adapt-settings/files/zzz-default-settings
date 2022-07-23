@@ -9,7 +9,8 @@ uci commit system
 uci set fstab.@global[0].anon_mount=1
 uci commit fstab
 
-ln -sf /usr/bin/python3.7 /usr/bin/python
+ln -sf /usr/bin/python3 /usr/bin/python
+ln -sf /usr/bin/wget /usr/libexec/wget-ssl
 
 # sed -i '/REDIRECT --to-ports 53/d' /etc/firewall.user
 # echo "iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53" >> /etc/firewall.user
