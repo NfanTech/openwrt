@@ -1,8 +1,8 @@
 # Welcome to NfanTech's mod OpenWrt
 ## 欢迎使用恩饭科技魔改合成怪版OpenWrt
 
-##EOL
-##这个不维护了，IPQ806x换到21.02-NSS了
+## EOL
+## 这个不维护了，IPQ806x换到21.02-NSS了
 
 ### For IPQ806x MTK 
 
