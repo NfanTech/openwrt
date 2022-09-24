@@ -1,7 +1,10 @@
 # Welcome to NfanTech's mod OpenWrt
 ## 欢迎使用恩饭科技魔改合成怪版OpenWrt
 
-### For IPQ806x MTK x86
+##EOL
+##这个不维护了，IPQ806x换到21.02-NSS了
+
+### For IPQ806x MTK 
 
 Base on offical git joined with special mod from Github
 ### Special Thanks
@@ -14,7 +17,7 @@ presisco's  	 [MTK Mods and Setting](https://github.com/presisco/openwrt/ "MTK M
 
 
 
-### 主要用于IPQ806x MTK x86平台
+### 主要用于IPQ806x MTK 
 基于官方魔改
 ### 特别感谢
 quarkysg's 	[NSS移植](https://github.com/quarkysg/openwrt/ "NSS") 
@@ -26,7 +29,7 @@ presisco's	[MTK移植和设置](https://github.com/presisco/openwrt/ "MTK Mods a
 
 编译命令如下:
 
-1. 首先装好 Ubuntu 64bit，推荐  Ubuntu  18 LTS x64（20太新，有些地方会出奇怪bug）
+1. 首先装好 Ubuntu 64bit，推荐  Ubuntu  18.04 LTS x64
 
 2. 命令行输入 `sudo apt-get update` ，然后输入
 `
