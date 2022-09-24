@@ -71,8 +71,8 @@ return baseclass.extend({
 			_('Kernel Version'),   boardinfo.kernel,
 			_('Local Time'),       datestr,
 			_('Uptime'),           systeminfo.uptime ? '%t'.format(systeminfo.uptime) : null,
-						_('CPU Info'),         'CPU0: ' + cpuinfo.cpu0freq + ' MHz , CPU1: '+cpuinfo.cpu1freq + ' MHz , ' + cpuinfo.cputemp + ' ℃ ',
-			_('ATH Info'),         ' 2.4G: ' + athinfo.ath10k_hwmon1 + ' ℃ , 5G: ' + athinfo.ath10k_hwmon0 + ' ℃ ',
+						_('CPU Info'),         'CPU0: ' + cpuinfo.cpu0freq + ' MHz , CPU1: '+cpuinfo.cpu1freq + ' MHz , ' + cpuinfo.cputemp + ' °C ',
+			_('ATH Info'),         ' 2.4G: ' + athinfo.ath10k_hwmon1 + ' °C , 5G: ' + athinfo.ath10k_hwmon0 + ' °C ',
 			_('Load Average'),     Array.isArray(systeminfo.load) ? '%.2f, %.2f, %.2f'.format(
 				systeminfo.load[0] / 65535.0,
 				systeminfo.load[1] / 65535.0,
