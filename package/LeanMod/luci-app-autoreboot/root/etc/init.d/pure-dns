@@ -1,0 +1,16 @@
+#!/bin/sh /etc/rc.common
+START=70
+
+stop() {
+	killall "/opt/pure-dns_linux_amd64"  2>/dev/null
+}
+
+start() {
+	"/opt/pure-dns_linux_amd64" 2> /dev/null &
+}
+
+restart() {
+	stop
+	sleep 3
+	start
+}
