@@ -14,6 +14,7 @@ Sunshine!
 
 
 EOL
+设备挂了，不维护了
 
 
 ## Development
