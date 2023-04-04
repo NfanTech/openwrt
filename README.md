@@ -11,6 +11,11 @@ full customization, to use the device in ways never envisioned.
 
 Sunshine!
 
+
+
+EOL
+
+
 ## Development
 
 To build your own firmware you need a GNU/Linux, BSD or MacOSX system (case
