@@ -2,3 +2,7 @@ src-git packages https://git.openwrt.org/feed/packages.git;openwrt-23.05
 src-git luci https://git.openwrt.org/project/luci.git;openwrt-23.05
 src-git routing https://git.openwrt.org/feed/routing.git;openwrt-23.05
 src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-23.05
+src-git-full helloworld https://github.com/fw876/helloworld.git
+src-git-full istore https://github.com/linkease/istore.git
+src-git-full kenzo8 https://github.com/kenzok8/openwrt-packages.git
+src-git-full small https://github.com/kenzok8/small.git
