@@ -1,0 +1,3 @@
+luci:feeds/luci/modules/luci-base/root/usr/libexec/rpcd/luci
+10_system.js:/feeds/luci/modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js
+luci-base.json:/feeds/luci/modules/luci-base/root/usr/share/rpcd/acl.d/luci-base.json
