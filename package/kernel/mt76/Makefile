@@ -1,16 +1,16 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mt76
-PKG_RELEASE=2
+PKG_RELEASE=1
 
 PKG_LICENSE:=GPLv2
 PKG_LICENSE_FILES:=
 
 PKG_SOURCE_URL:=https://github.com/openwrt/mt76
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_DATE:=2024-02-03
-PKG_SOURCE_VERSION:=6124ea9135ed512671933f5520c46842906c78bc
-PKG_MIRROR_HASH:=acc326d7b15c9c72b494ed601300be329553f896e65c7f045e6a09327304c34a
+PKG_SOURCE_DATE:=2024-04-03
+PKG_SOURCE_VERSION:=1e336a8582dce2ef32ddd440d423e9afef961e71
+PKG_MIRROR_HASH:=48e787bcf0c526d9511375a8a3a77c850de9deca79f6177d2eeea7ca8bd798e2
 
 PKG_MAINTAINER:=Felix Fietkau <nbd@nbd.name>
 PKG_USE_NINJA:=0
@@ -318,7 +318,7 @@ endef
 define KernelPackage/mt7996e
   $(KernelPackage/mt76-default)
   TITLE:=MediaTek MT7996E wireless driver
-  DEPENDS+=@PCI_SUPPORT +kmod-mt76-connac +kmod-hwmon-core
+  DEPENDS+=@PCI_SUPPORT +kmod-mt76-connac +kmod-hwmon-core +@DRIVER_11AX_SUPPORT +@KERNEL_RELAY
   FILES:= $(PKG_BUILD_DIR)/mt7996/mt7996e.ko
   AUTOLOAD:=$(call AutoProbe,mt7996e)
 endef
